@@ -113,9 +113,11 @@ Old or superseded content kept for historical reference.
 - Use the specific tools listed in `source-of-truth/` files — do not substitute or generalize
 - Distinguish between "Expert" and "Familiarity" proficiency levels when that distinction exists
 
-## AI Configuration (Cursor-specific)
+## AI Configuration
 
-### Skills (`.cursor/skills/`)
+### Skills
+
+Skills are available in both `.cursor/skills/` (for Cursor) and `.claude/skills/` (for Claude Code). Both contain the same workflows — the tools and scripts live under `.cursor/skills/`.
 
 | Skill | Trigger |
 |---|---|
