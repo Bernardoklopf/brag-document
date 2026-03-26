@@ -1,14 +1,17 @@
 # Academic Projects & Experiences
 
-## B.S. in Computer Science
-**Universidade Federal de Tecnologia (2014 - 2018)**
+<!-- TODO: Add your academic background. One H2 per degree, with H3 subsections for projects and research. -->
 
-### Capstone Project (TCC)
-**Title:** "Comparative Analysis of Performance in Single Page Applications: Angular vs React"
-- Conducted a benchmark study comparing rendering performance and bundle sizes of "Hello World" and complex CRUD applications built with Angular and React.
-- **Result:** Received a grade of 9.5/10.
+<!--
+## Degree Name
+**Institution (Start Year - End Year)**
 
-### Research Assistant
-**Topic:** Artificial Intelligence in Education
-- Assisted in developing a web-based tutoring system using **Python** and **Django**.
-- Published a paper in a local technology conference.
+### Capstone Project / Thesis
+**Title:** "Your project title"
+- Brief description of the project and methodology.
+- **Result:** Grade, publication, or outcome.
+
+### Research / Teaching Assistant
+**Topic:** Research area
+- Brief description of your role and contributions.
+-->

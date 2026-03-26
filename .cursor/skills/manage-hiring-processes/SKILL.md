@@ -23,7 +23,7 @@ Full lifecycle management of hiring processes: from initial registration through
 
 ### Step 2 — Tracking file structure
 
-Use completed processes as reference (e.g., `hiring-processes/completed/chargeblast-sr-software-engineer.md`, `hiring-processes/completed/plank-senior-fullstack-engineer.md`). The file should contain:
+Use the template as reference: `hiring-processes/in-progress/_template-company-role/_template-company-role.md`. The file should contain:
 
 - **Header**: Company name, position, start date, status, last update
 - **Process Summary**: Initial contact details, recruiter info, platform
@@ -100,4 +100,4 @@ If the user provides the initial recruiter message, generate a professional repl
 | Resume generator docs | `.cursor/skills/generate-custom-resumes/resume-generator/README.md` |
 | Resume writing tips | `guidelines/resume-tips.md` |
 | Copywriting tips | `guidelines/copywriting-tips.md` |
-| Completed processes (examples) | `hiring-processes/completed/` |
+| Template (skeleton) | `hiring-processes/in-progress/_template-company-role/` |

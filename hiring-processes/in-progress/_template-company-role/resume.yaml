@@ -1,0 +1,21 @@
+# Customization for {Company} - {Role}
+# Only include fields you want to override from resumes/resume-base.yaml.
+# Generate PDF with:
+#   cd .cursor/skills/generate-custom-resumes/resume-generator && npm install
+#   node src/index.js \
+#     --custom hiring-processes/in-progress/{company}-{role}/resume.yaml \
+#     --output hiring-processes/in-progress/{company}-{role}/resume.pdf
+
+title: ""  # e.g., "Staff Software Engineer - Full Stack"
+
+introduction: |
+  # TODO: Tailored introduction emphasizing experience relevant to this specific role.
+
+experiences:
+  # Only override companies/roles where you want different bullets or skills.
+  # IDs must match resumes/resume-base.yaml.
+  - id: company-1
+    roles:
+      - id: role-1
+        bullets:
+          - ""  # Customized bullet emphasizing relevance to this job

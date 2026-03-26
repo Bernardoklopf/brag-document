@@ -1,58 +1,46 @@
-title: Senior Fullstack Engineer
+# Base resume — all fields below are required by the resume-generator tool.
+# Fill in your data. Hiring process resumes override specific fields via --custom.
+
+title: ""  # e.g., "Senior Software Engineer"
 
 introduction: |
-  Senior Fullstack Engineer with over 8 years of experience in web development. Specialized in building scalable applications using **Angular** and **Node.js**. Passionate about software architecture, clean code, and mentoring junior developers. Experienced in leading technical initiatives and modernizing legacy systems.
+  # TODO: Write your professional summary here.
 
 links:
-  linkedin: https://www.linkedin.com/in/dev-ficticio/
-  github: https://github.com/dev-ficticio
+  linkedin: ""  # e.g., https://www.linkedin.com/in/your-handle/
+  github: ""    # e.g., https://github.com/your-handle
 
 experiences:
-  - id: techcorp
-    company: TechCorp
-    keySkills: Angular, Node.js, NestJS, PostgreSQL, AWS
+  # Add one entry per company, from most recent to oldest.
+  # The 'id' is used by --custom YAML files to override specific fields.
+  - id: company-1       # kebab-case identifier
+    company: ""          # e.g., "Acme Corp"
+    keySkills: ""        # e.g., "React, Node.js, PostgreSQL"
     roles:
-      - id: senior-fullstack-engineer
-        title: Senior Fullstack Engineer
-        period: 2022 - Present
+      - id: role-1       # kebab-case identifier
+        title: ""        # e.g., "Senior Software Engineer"
+        period: ""       # e.g., "2022 - Present"
         bullets:
-          - Architected and led the migration of a monolithic AngularJS application to **Angular 16**, resulting in a **40% improvement in page load time**.
-          - Designed and implemented microservices using **NestJS** to decouple complex business logic from the legacy monolith.
-          - Mentored 3 junior developers, conducting code reviews and pair programming sessions to improve team code quality.
-          - Introduced **Unit Testing** coverage (Jest) from 0% to 65% in critical modules.
+          - ""           # Achievement with metric. Use STAR method.
+          # - Add more bullets as needed
 
-  - id: websolutions
-    company: WebSolutions
-    keySkills: Angular, Node.js, Express, MongoDB
-    roles:
-      - id: fullstack-developer
-        title: Fullstack Developer (Mid-level to Senior)
-        period: 2019 - 2022
-        bullets:
-          - Built a custom e-commerce dashboard using **Angular** and **NgRx**, handling complex state management for inventory and sales data.
-          - Optimized backend API endpoints in **Node.js**, reducing response times by **30%** for high-traffic endpoints.
-          - Integrated third-party payment gateways (Stripe, PayPal) and shipping providers.
-          - Collaborated with UX/UI designers to implement responsive and accessible interfaces.
-
-  - id: startup-inc
-    company: StartUp Inc
-    keySkills: Angular, HTML, SASS, JavaScript
-    roles:
-      - id: frontend-developer
-        title: Frontend Developer (Junior to Mid-level)
-        period: 2016 - 2019
-        bullets:
-          - Developed reusable UI components using **Angular**, establishing a shared component library used across multiple internal projects.
-          - Implemented real-time features using WebSockets (Socket.io) for collaborative task editing.
-          - Participated in agile ceremonies (Scrum) and contributed to sprint planning and retrospectives.
+  # - id: company-2
+  #   company: ""
+  #   keySkills: ""
+  #   roles:
+  #     - id: role-2
+  #       title: ""
+  #       period: ""
+  #       bullets:
+  #         - ""
 
 education:
-  - degree: B.S. in Computer Science
-    institution: Universidade Federal de Tecnologia
-    details: 2014 - 2018
+  - degree: ""           # e.g., "B.S. in Computer Science"
+    institution: ""      # e.g., "University Name"
+    details: ""          # e.g., "2014 - 2018"
 
 skills:
-  languages: JavaScript, TypeScript, Node.js, Python (Basic)
-  frameworks: Angular (v2+ to v17), NestJS, Express, React (Hooks), Vue.js
-  databases: PostgreSQL, MongoDB
-  devops: Docker, AWS (EC2, S3, RDS), CI/CD (GitHub Actions)
+  languages: ""          # e.g., "JavaScript, TypeScript, Python"
+  frameworks: ""         # e.g., "React, Next.js, Express"
+  databases: ""          # e.g., "PostgreSQL, MongoDB"
+  devops: ""             # e.g., "Docker, AWS, CI/CD"

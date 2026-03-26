@@ -36,8 +36,9 @@ Subfolders: `algorithms/`, `architecture/`, `artificial-intelligence/`, `courses
 
 ### `hiring-processes/` — Job application tracking
 
-- `in-progress/` — Active processes. Each subfolder or file contains: job description, fit analysis, customized resume, interview preparation, and status
-- `completed/` — Archived processes with outcomes. Useful as reference for similar future roles
+- `in-progress/` — Active processes. Each subfolder contains: job description, fit analysis, customized resume, interview preparation, and status
+- `in-progress/_template-company-role/` — Skeleton template for creating new hiring processes. Use this as the reference structure.
+- `completed/` — Archived processes with outcomes. Processes are moved here when finalized.
 
 ### `evaluations/` — Performance reviews
 
@@ -128,7 +129,7 @@ Old or superseded content kept for historical reference.
 1. **Never invent data.** All professional experiences, dates, companies, and metrics must come from existing files. If information is missing, ask the user.
 2. **Prioritize `source-of-truth/`.** When conflicting information exists, `source-of-truth/` files win.
 3. **Cross-reference `knowledge-base/`** when generating technical content (interview prep, skill assessments).
-4. **Use `hiring-processes/completed/`** as reference patterns when creating new hiring process entries.
+4. **Use `hiring-processes/in-progress/_template-company-role/`** as the reference pattern when creating new hiring process entries.
 5. **Do not expose sensitive data** (salaries, personal identifiers) unless explicitly requested.
 6. **Do not use H1 (#) headers** in responses; start with H2 (##) or H3 (###).
 7. **Do not summarize** code or text blocks unless explicitly asked.

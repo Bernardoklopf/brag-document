@@ -76,4 +76,4 @@ Add a comment at the top of the YAML with the generation command for future refe
 | Relevant experiences | `source-of-truth/relevant-experiences.md` |
 | Resume writing tips | `guidelines/resume-tips.md` |
 | Copywriting tips | `guidelines/copywriting-tips.md` |
-| Existing hiring process resumes (examples) | `hiring-processes/in-progress/*/resume.yaml` |
+| Hiring process resume template | `hiring-processes/in-progress/_template-company-role/resume.yaml` |
