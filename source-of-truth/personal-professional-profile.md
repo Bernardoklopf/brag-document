@@ -1,35 +1,41 @@
 # Personal Professional Profile
 
-This file contains the professional profile of Dev Fictício.
+<!-- TODO: Replace this intro with your name/alias. E.g., "This file contains the professional profile of [Your Name]." -->
 
 ## Summary
 
-Senior Fullstack Engineer with over 8 years of experience in web development. Specialized in building scalable applications using **Angular** and **Node.js**. Passionate about software architecture, clean code, and mentoring junior developers. Experienced in leading technical initiatives and modernizing legacy systems.
+<!-- TODO: Write a 2-3 sentence professional summary. E.g., "[Title] with X years of experience in [domain]. Specialized in [key technologies]. Passionate about [interests]." -->
 
 ## Skills
 
 ### Primary Stack (Expert)
-- **Frontend:** Angular (v2+ to v17), TypeScript, RxJS, NgRx, HTML5, CSS3/SASS.
-- **Backend:** Node.js, NestJS, Express.
-- **Database:** PostgreSQL, MongoDB.
+
+<!-- TODO: List your primary technologies grouped by area. E.g.:
+- **Frontend:** Angular, TypeScript, RxJS
+- **Backend:** Node.js, NestJS
+- **Database:** PostgreSQL, MongoDB
+-->
 
 ### Secondary Stack (Intermediate/Basic)
-- **Frontend:** React (Hooks, Context API), Vue.js (Options API).
-- **Backend:** Python (FastAPI).
-- **DevOps:** Docker, AWS (EC2, S3, RDS), CI/CD (GitHub Actions).
+
+<!-- TODO: List technologies you have intermediate or basic proficiency in. -->
 
 ## Languages
 
+<!-- TODO: List languages and proficiency levels. E.g.:
 - **Portuguese:** Native
-- **English:** Advanced (C1) - Capable of leading technical discussions and presentations.
+- **English:** Advanced (C1)
+-->
 
 ## Education
 
-- **B.S. in Computer Science** - Universidade Federal de Tecnologia (2014 - 2018)
+<!-- TODO: List degrees. E.g.:
+- **B.S. in Computer Science** - University Name (2014 - 2018)
+-->
 
 ## Interests
 
+<!-- TODO: List professional interests. E.g.:
 - Open Source Contribution
 - Technical Writing
-- System Design
-- Developer Experience (DX)
+-->

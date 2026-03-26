@@ -6,21 +6,13 @@
 
 ---
 
-## 📢 Tech Leads Club Share Day (21/02/2026)
-
-Este repositório foi apresentado no **Tech Leads Club Share Day**.
-
-👉 **[Acesse aqui os materiais da palestra (roteiro, slides e diagramas)](knowledge-base/tech-leads-club/share-day-presentation/)**
-
----
-
 ## O que este repositório faz
 
-Em vez de manter um documento estático, este repositório organiza toda a minha trajetória profissional — experiências, skills, storytellings, conteúdos técnicos e processos seletivos — de forma que um agente de IA consiga cruzar informações e gerar outputs de alta qualidade.
+Em vez de manter um documento estático, este repositório organiza toda a sua trajetória profissional — experiências, skills, storytellings, conteúdos técnicos e processos seletivos — de forma que um agente de IA consiga cruzar informações e gerar outputs de alta qualidade.
 
 **Casos de uso reais:**
 
-- **Currículo hiper-customizado por vaga** — a IA cruza o job description com minhas experiências e gera um currículo enfatizando os matches relevantes
+- **Currículo hiper-customizado por vaga** — a IA cruza o job description com suas experiências e gera um currículo enfatizando os matches relevantes
 - **Preparação para entrevistas** — sugestões de perguntas comportamentais com respostas baseadas em experiências reais, e conceitos técnicos para revisar com referência a conteúdos já estudados
 - **Auto-avaliação de performance** — preencher formulários de avaliação com evidências concretas e métricas, em minutos
 - **Gestão de aprendizados** — registros de cursos, eventos e estudos que retroalimentam todos os outros casos de uso
