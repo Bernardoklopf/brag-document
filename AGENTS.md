@@ -125,6 +125,15 @@ Old or superseded content kept for historical reference.
 - Provide a **Match Assessment** (Low / Medium / High) with reasoning
 - Suggest concrete actions to close gaps (study topics from `knowledge-base/`, projects to highlight, skills to emphasize)
 
+### Resume Output Language
+When generating a resume or CV, determine the output language using this priority:
+1. **Explicit user instruction** — if the user specifies a language, use it
+2. **Job description language** — if the JD is written entirely in a non-English language (e.g., Portuguese, Spanish, German), output the resume in that language
+3. **Company locale** — if the company is known to operate exclusively in a non-English-speaking country (e.g., a Brazilian company with no international operations), output in the local language
+4. **Default to English** — in all other cases, including international companies, remote roles, and ambiguous situations
+
+When ambiguity exists (e.g., a multinational with offices in Brazil, or a JD mixing languages), **ask the user** which language to use before generating the resume. Do not guess.
+
 ### Resume Engineering
 - Every bullet must follow the **impact formula:** `[Action Verb] + [Task/Tech] + [Quantifiable Result]`
   - Bad: "Worked on the API." → Good: "Designed and deployed a RESTful API using **Go** and **gRPC**, reducing latency by **30%** and handling **10k concurrent requests**."

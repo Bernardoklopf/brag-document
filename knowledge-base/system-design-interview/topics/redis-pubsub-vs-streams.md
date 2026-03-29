@@ -1,84 +1,83 @@
 # Redis Pub/Sub vs. Redis Streams (vs. Lists)
 
-Em System Design, escolher o mecanismo correto de mensageria no Redis é crucial para definir a **durabilidade**, **consistência** e **escalabilidade** do seu sistema.
+In System Design, choosing the right messaging mechanism in Redis is crucial for defining the **durability**, **consistency**, and **scalability** of your system.
 
-Este guia detalha as diferenças entre **Pub/Sub**, **Streams** e **Lists**, focando em quando usar cada um.
+This guide details the differences between **Pub/Sub**, **Streams**, and **Lists**, focusing on when to use each one.
 
 ---
 
 ## 1. Redis Pub/Sub (Fire-and-Forget)
 
-O padrão **Publish/Subscribe** é um mecanismo de transmissão de mensagens onde os emissores (publishers) não enviam mensagens para destinatários específicos. Em vez disso, as mensagens são publicadas em canais (channels).
+The **Publish/Subscribe** pattern is a message broadcasting mechanism where publishers don't send messages to specific recipients. Instead, messages are published to channels.
 
-### Características Principais
-*   **Fire-and-Forget:** O Redis não armazena a mensagem. Se não houver ninguém ouvindo no canal no momento do envio, a mensagem é **perdida para sempre**.
-*   **Fan-out:** Uma mensagem enviada para um canal é entregue imediatamente a **todos** os assinantes daquele canal.
-*   **Baixa Latência:** Extremamente rápido, pois não há overhead de persistência ou ack.
-*   **Sem Histórico:** Um novo assinante não recebe mensagens passadas.
+### Key Characteristics
+*   **Fire-and-Forget:** Redis does not store the message. If no one is listening on the channel at the time of sending, the message is **lost forever**.
+*   **Fan-out:** A message sent to a channel is immediately delivered to **all** subscribers of that channel.
+*   **Low Latency:** Extremely fast, as there is no persistence or acknowledgment overhead.
+*   **No History:** A new subscriber does not receive past messages.
 
-### Use Cases Ideais
-*   **Notificações em Tempo Real:** "O usuário X está digitando...", "Novo like na sua foto".
-*   **Chat Efêmero:** Onde o histórico não é crítico ou é carregado de outra fonte.
-*   **Service Discovery:** Avisar serviços que uma nova instância subiu.
-*   **Live Updates (Ex: Collaborative Editor):** Mostrar a posição do cursor do mouse de outros usuários em tempo real. Se perder um pacote de "posição do mouse", não é crítico, pois o próximo pacote corrigirá a posição.
-
----
-
-## 2. Redis Streams (Log de Eventos Persistente)
-
-Introduzido no Redis 5.0, o **Streams** é uma estrutura de dados de log (append-only log), inspirada no Apache Kafka. Ele resolve o problema da falta de persistência do Pub/Sub.
-
-### Características Principais
-*   **Persistência:** As mensagens são armazenadas no disco (se o Redis estiver configurado para tal) e na memória. Elas ficam lá até serem explicitamente deletadas ou expiradas (capping).
-*   **Consumer Groups:** Permite que múltiplos consumidores leiam do mesmo stream de forma coordenada. O Redis gerencia qual consumidor leu qual mensagem (offset).
-*   **Acknowledge (ACK):** O consumidor precisa confirmar (`XACK`) que processou a mensagem. Se o consumidor falhar antes do ACK, a mensagem pode ser reprocessada por outro (garantia de entrega "at-least-once").
-*   **Acesso ao Histórico:** Novos consumidores podem ler mensagens antigas desde o início do stream (`0`) ou apenas novas (`$`).
-
-### Use Cases Ideais
-*   **Event Sourcing:** Armazenar todas as mudanças de estado de um objeto (ex: todas as edições em um documento).
-*   **Job Queues Confiáveis:** Onde a perda de uma tarefa é inaceitável (ex: processamento de pagamento, envio de email transacional).
-*   **Snapshot Workers:** Consolidar deltas de edição em um banco de dados SQL/NoSQL. O worker pode cair e voltar, continuando de onde parou sem perder dados.
+### Ideal Use Cases
+*   **Real-Time Notifications:** "User X is typing...", "New like on your photo".
+*   **Ephemeral Chat:** Where history is not critical or is loaded from another source.
+*   **Service Discovery:** Notifying services that a new instance has come up.
+*   **Live Updates (e.g., Collaborative Editor):** Showing the mouse cursor position of other users in real time. If a "mouse position" packet is lost, it's not critical, as the next packet will correct the position.
 
 ---
 
-## 3. Redis Lists (Filas Simples)
+## 2. Redis Streams (Persistent Event Log)
 
-Antes do Streams, usava-se Lists (`LPUSH` / `RPOP`) para filas. Ainda é válido para casos simples.
+Introduced in Redis 5.0, **Streams** is an append-only log data structure, inspired by Apache Kafka. It solves the lack of persistence in Pub/Sub.
 
-### Características
-*   **Simples:** Fácil de entender e implementar.
-*   **Um Consumidor por Mensagem:** Ao fazer `POP`, a mensagem sai da fila. Não é ideal para Fan-out (múltiplos serviços precisando do mesmo dado).
-*   **Sem Consumer Groups Nativos:** Requer implementação manual para lidar com falhas e retentativas (ex: `RPOPLPUSH` para mover para uma fila de processamento/dead-letter).
+### Key Characteristics
+*   **Persistence:** Messages are stored on disk (if Redis is configured for it) and in memory. They remain there until explicitly deleted or expired (capping).
+*   **Consumer Groups:** Allows multiple consumers to read from the same stream in a coordinated way. Redis manages which consumer read which message (offset).
+*   **Acknowledge (ACK):** The consumer must confirm (`XACK`) that it processed the message. If the consumer fails before ACK, the message can be reprocessed by another (at-least-once delivery guarantee).
+*   **History Access:** New consumers can read old messages from the beginning of the stream (`0`) or only new ones (`$`).
+
+### Ideal Use Cases
+*   **Event Sourcing:** Storing all state changes of an object (e.g., all edits in a document).
+*   **Reliable Job Queues:** Where losing a task is unacceptable (e.g., payment processing, transactional email sending).
+*   **Snapshot Workers:** Consolidating edit deltas into a SQL/NoSQL database. The worker can crash and come back, resuming from where it left off without losing data.
 
 ---
 
-## Resumo Comparativo: O Cenário do "Editor Colaborativo"
+## 3. Redis Lists (Simple Queues)
 
-Imagine que você está desenhando um Google Docs. Você precisa de duas coisas:
-1.  Que os usuários vejam as letras aparecendo na tela uns dos outros **agora**.
-2.  Que o documento seja salvo no banco de dados com segurança.
+Before Streams, Lists (`LPUSH` / `RPOP`) were used for queues. Still valid for simple cases.
 
-### O Erro Comum (Usar Pub/Sub para tudo)
-Se você usar Pub/Sub para o Worker salvar no banco:
-*   O usuário digita "A". O servidor publica no canal `doc-123`.
-*   O Worker está reiniciando (deploy) e perde a mensagem.
-*   O usuário vê "A", mas no banco de dados o "A" nunca foi salvo.
-*   **Resultado:** Perda de dados.
+### Characteristics
+*   **Simple:** Easy to understand and implement.
+*   **One Consumer per Message:** When doing `POP`, the message leaves the queue. Not ideal for fan-out (multiple services needing the same data).
+*   **No Native Consumer Groups:** Requires manual implementation to handle failures and retries (e.g., `RPOPLPUSH` to move to a processing/dead-letter queue).
 
-### A Arquitetura Correta (Hybrid Approach)
+---
 
-| Componente | Tecnologia | Por que? |
+## Comparative Summary: The "Collaborative Editor" Scenario
+
+Imagine you are designing a Google Docs. You need two things:
+1.  Users to see letters appearing on each other's screens **now**.
+2.  The document to be saved to the database safely.
+
+### The Common Mistake (Using Pub/Sub for everything)
+If you use Pub/Sub for the Worker to save to the database:
+*   The user types "A". The server publishes to channel `doc-123`.
+*   The Worker is restarting (deploy) and misses the message.
+*   The user sees "A", but in the database "A" was never saved.
+*   **Result:** Data loss.
+
+### The Correct Architecture (Hybrid Approach)
+
+| Component | Technology | Why? |
 | :--- | :--- | :--- |
-| **User-to-User Sync** | **Redis Pub/Sub** | Precisamos de velocidade máxima (Real-time). Se um usuário perder um pacote de "cursor position", não quebra o documento. |
-| **Persistência (Worker)** | **Redis Streams** | Precisamos de confiabilidade. O Worker lê a Stream como um "Write-Ahead Log". Se o Worker cair, o Redis guarda o offset e o Worker retoma depois. Zero perda de dados. |
+| **User-to-User Sync** | **Redis Pub/Sub** | We need maximum speed (Real-time). If a user loses a "cursor position" packet, it doesn't break the document. |
+| **Persistence (Worker)** | **Redis Streams** | We need reliability. The Worker reads the Stream as a "Write-Ahead Log". If the Worker crashes, Redis keeps the offset and the Worker resumes later. Zero data loss. |
 
-### Tabela de Decisão Rápida
+### Quick Decision Table
 
 | Feature | Pub/Sub | Streams | Lists |
 | :--- | :---: | :---: | :---: |
-| **Persistência** | ❌ Não | ✅ Sim | ✅ Sim |
-| **Histórico** | ❌ Não | ✅ Sim | ✅ Sim |
-| **Fan-out (1:N)** | ✅ Sim (Nativo) | ✅ Sim (Consumer Groups) | ⚠️ Difícil (Requer N listas) |
-| **Garantia de Entrega** | At-most-once (Pode perder) | At-least-once (ACK) | At-most-once (No padrão) |
-| **Complexidade** | Baixa | Média/Alta | Baixa |
-
+| **Persistence** | No | Yes | Yes |
+| **History** | No | Yes | Yes |
+| **Fan-out (1:N)** | Yes (Native) | Yes (Consumer Groups) | Difficult (Requires N lists) |
+| **Delivery Guarantee** | At-most-once (May lose) | At-least-once (ACK) | At-most-once (Default) |
+| **Complexity** | Low | Medium/High | Low |
