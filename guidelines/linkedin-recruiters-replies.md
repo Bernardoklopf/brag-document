@@ -21,52 +21,52 @@ Thanks! Regards,
 [Your Name]
 
 
-### Template 2 (Portuguese)
+### Template 2 (English)
 
-Olá {name}, tudo ótimo! E com você?
-Primeiramente, muito obrigado pelo contato.
+Hi {name}, I'm doing great! How about you?
+First of all, thank you so much for reaching out.
 
-Gostaria de saber mais sobre essa oportunidade na {company}.
+I'd like to know more about this opportunity at {company}.
 
-Você poderia me dizer mais sobre o projeto, nível de senioridade, requerimentos e faixa salarial?
+Could you tell me more about the project, seniority level, requirements, and salary range?
 
-### Template 3 (Portuguese)
+### Template 3 (English)
 
-Olá {name}, tudo ótimo! E com você? Primeiramente, muito obrigado pelo contato.
+Hi {name}, I'm doing great! How about you? First of all, thank you so much for reaching out.
 
-Gostaria de saber mais sobre essas oportunidades na {company}. Tenho tido grande interesse em trabalhar para projetos internacionais, então vejo que há um ótimo alinhamento com minhas experiências, habilidades e o que tenho buscado para minha carreira.
+I'd like to know more about these opportunities at {company}. I've had a strong interest in working on international projects, so I see a great alignment with my experiences, skills, and what I've been looking for in my career.
 
-Em quase todo o meu tempo de carreira, eu trabalhei com {technologies}, e também já trabalhei em alguns projetos com {other technologies}. Inclusive, já trabalhei como freelancer para um cliente internacional, da China, em um projeto que foi desenvolvido em {technologies} e {other technologies}.
+Throughout most of my career, I've worked with {technologies}, and I've also worked on some projects with {other technologies}. I've even worked as a freelancer for an international client from China, on a project built with {technologies} and {other technologies}.
 
-Estou te enviando meu resume, e estou disponível para conversarmos sobre as oportunidades disponíveis na {company}.
+I'm sending you my resume, and I'm available to discuss the opportunities at {company}.
 
-Muito obrigado!
-
-
-### Template 4 (Portuguese)
-
-Olá {name}, boa noite. Muito obrigado pelo retorno.
-
-Vejo que há um ótimo alinhamento com minhas experiências, habilidades e o que tenho buscado para minha carreira.
-
-Em quase todo o meu tempo de carreira, eu trabalhei com {technology}, desenvolvendo robustas soluções em {technology}, e resolvendo problemas e bugs complexos. Além disso, também já trabalhei demandas que envolviam, além do frontend, implementações no backend, o que me permitiu trabalhar em trabalhar em uma solução de ponta-a-ponta e ter uma visão geral da arquitetura e melhores abordagens.
-
-Também, já tive a oportunidade de estabelecer um novo padrão de arquitetura em um projeto com {technology}, ao atuar em uma grande refatoração.
+Thank you!
 
 
+### Template 4 (English)
 
-### Template 5 (Portuguese)
+Hi {name}, good evening. Thank you so much for getting back to me.
 
-Olá {name}, tudo ótimo! E com você?
-Primeiramente, muito obrigado pelo contato.
+I see a great alignment with my experiences, skills, and what I've been looking for in my career.
 
-Gostaria de saber mais sobre essa oportunidade na {company}, pois vejo que há um ótimo alinhamento com minhas experiências, habilidades e o que tenho buscado para minha carreira.
+Throughout most of my career, I've worked with {technology}, developing robust solutions in {technology}, and solving complex problems and bugs. Additionally, I've also worked on tasks that involved, beyond the frontend, backend implementations, which allowed me to work on end-to-end solutions and gain an overall view of the architecture and best approaches.
 
-Em quase todo o meu tempo de carreira, eu trabalhei com {technology}, desenvolvendo robustas soluções em {technology}, e resolvendo problemas e bugs complexos. Além disso, também já trabalhei demandas que envolviam, além do frontend, implementações no backend, o que me permitiu trabalhar em trabalhar em uma solução de ponta-a-ponta e ter uma visão geral da arquitetura e melhores abordagens.
+I've also had the opportunity to establish a new architecture pattern in a project with {technology}, while leading a major refactoring effort.
 
-Estou te enviando meu resume, e estou disponível para conversarmos sobre essa oportunidade. Meu número é: [Your Phone Number].
 
-Muito obrigado,
+
+### Template 5 (English)
+
+Hi {name}, I'm doing great! How about you?
+First of all, thank you so much for reaching out.
+
+I'd like to know more about this opportunity at {company}, as I see a great alignment with my experiences, skills, and what I've been looking for in my career.
+
+Throughout most of my career, I've worked with {technology}, developing robust solutions in {technology}, and solving complex problems and bugs. Additionally, I've also worked on tasks that involved, beyond the frontend, backend implementations, which allowed me to work on end-to-end solutions and gain an overall view of the architecture and best approaches.
+
+I'm sending you my resume, and I'm available to discuss this opportunity. My number is: [Your Phone Number].
+
+Thank you,
 [Your Name]
 
 
@@ -221,38 +221,38 @@ Best regards,
 ## Negatives replies
 
 
-### Template 1 (Portuguese)
+### Template 1 (English)
 
-Olá, {name}. Tudo ótimo, e com você?
+Hi, {name}. I'm doing great, and you?
 
-Primeiramente, muito obrigado pelo contato e por me apresentar essa oportunidade. Mas, no momento, estou focado em permanecer e crescer na empresa onde estou.
+First of all, thank you so much for reaching out and introducing me to this opportunity. However, at the moment, I'm focused on staying and growing at my current company.
 
-Mas de qualquer forma agradeço pelo seu contato. E quem sabe, podemos nos falar em outro momento sobre essa ou outra oportunidade?
-
-
-
-### Template 2 (Portuguese)
-
-Olá, ****. Tudo ótimo! E com você?
-
-Primeiramente, muito obrigado pelo contato e por apresentar a oportunidade.
-
-No momento, estou com foco em oportunidades para internacionais.
-
-Mas de qualquer forma agradeço pelo seu contato. E quem sabe, podemos nos falar em outro momento sobre essa ou outra oportunidade?
+Either way, I appreciate your contact. Perhaps we can talk at another time about this or other opportunities?
 
 
-### Template 3 (Portuguese)
 
-Olá, {name}. Tudo ótimo! E com você?
+### Template 2 (English)
 
-Primeiramente, muito obrigado pelo contato e por apresentar a oportunidade.
+Hi, {name}. I'm doing great! And you?
 
-No momento, estou participando de alguns outros processos seletivos, e estou até mesmo com maior foco em oportunidades para empresas fora do Brasil.
+First of all, thank you so much for reaching out and presenting the opportunity.
 
-Logo, pelo menos por enquanto, pretendo manter o foco nesses processos, e evitar participar de outros recrutamentos.
+At the moment, I'm focused on international opportunities.
 
-Mas de qualquer forma, agradeço pelo seu contato. E quem sabe, podemos nos falar em outro momento sobre essa ou outra oportunidade?
+Either way, I appreciate your contact. Perhaps we can talk at another time about this or other opportunities?
+
+
+### Template 3 (English)
+
+Hi, {name}. I'm doing great! And you?
+
+First of all, thank you so much for reaching out and presenting the opportunity.
+
+At the moment, I'm participating in some other hiring processes, and I'm primarily focused on opportunities with companies outside of Brazil.
+
+So, at least for now, I intend to keep my focus on those processes and avoid joining other recruitments.
+
+Either way, I appreciate your contact. Perhaps we can talk at another time about this or other opportunities?
 
 
 ### Template 4 (English)

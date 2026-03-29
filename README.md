@@ -1,35 +1,35 @@
 # Professional Career Notebook
 
-**Brag Document potencializado com IA** — um repositório pessoal que transforma registros de carreira em uma base de conhecimento estruturada, pronta para ser consumida por agentes de IA.
+**AI-powered Brag Document** — a personal repository that transforms career records into a structured knowledge base, ready to be consumed by AI agents.
 
-> O conceito de Brag Document foi popularizado por [Julia Evans (2019)](https://jvns.ca/blog/brag-documents/) como um documento vivo para registrar conquistas, contribuições e impacto profissional. Este repositório leva essa ideia além: ao estruturar o conteúdo em Markdown dentro de um repo Git, ele se torna **contexto rico para agentes de IA** (como o [Cursor](https://cursor.com)), habilitando automações que economizam horas de trabalho.
-
----
-
-## O que este repositório faz
-
-Em vez de manter um documento estático, este repositório organiza toda a sua trajetória profissional — experiências, skills, storytellings, conteúdos técnicos e processos seletivos — de forma que um agente de IA consiga cruzar informações e gerar outputs de alta qualidade.
-
-**Casos de uso reais:**
-
-- **Currículo hiper-customizado por vaga** — a IA cruza o job description com suas experiências e gera um currículo enfatizando os matches relevantes
-- **Preparação para entrevistas** — sugestões de perguntas comportamentais com respostas baseadas em experiências reais, e conceitos técnicos para revisar com referência a conteúdos já estudados
-- **Auto-avaliação de performance** — preencher formulários de avaliação com evidências concretas e métricas, em minutos
-- **Gestão de aprendizados** — registros de cursos, eventos e estudos que retroalimentam todos os outros casos de uso
+> The Brag Document concept was popularized by [Julia Evans (2019)](https://jvns.ca/blog/brag-documents/) as a living document to record achievements, contributions, and professional impact. This repository takes the idea further: by structuring content in Markdown within a Git repo, it becomes **rich context for AI agents** (like [Cursor](https://cursor.com) and [Claude Code](https://claude.ai/code)), enabling automations that save hours of work.
 
 ---
 
-## Estrutura do repositório
+## What this repository does
+
+Instead of maintaining a static document, this repository organizes your entire professional trajectory — experiences, skills, storytellings, technical content, and hiring processes — so that an AI agent can cross-reference information and generate high-quality outputs.
+
+**Real use cases:**
+
+- **Hyper-customized resume per job** — the AI cross-references the job description with your experiences and generates a resume emphasizing the relevant matches
+- **Interview preparation** — behavioral question suggestions with answers based on real experiences, and technical concepts to review with references to previously studied content
+- **Performance self-assessment** — fill evaluation forms with concrete evidence and metrics, in minutes
+- **Learning management** — records of courses, events, and studies that feed back into all other use cases
+
+---
+
+## Repository structure
 
 ```
 professional-career-notebook/
 │
-├── source-of-truth/              # Fonte primária de informação
-│   ├── career-tracking/          # Acompanhamento de carreira por empresa
-│   │   └── {company-name}/       # Um diretório por empresa (kebab-case)
-│   │       ├── achievements/     # Conquistas trimestrais
-│   │       ├── performance-cycles/ # Ciclos de avaliação de performance
-│   │       └── 3ps/              # Progresso/Planos/Problemas semanais
+├── source-of-truth/              # Primary source of information
+│   ├── career-tracking/          # Career tracking by company
+│   │   └── {company-name}/       # One directory per company (kebab-case)
+│   │       ├── achievements/     # Quarterly achievements
+│   │       ├── performance-cycles/ # Performance review cycles
+│   │       └── 3ps/              # Weekly Progress/Plans/Problems
 │   ├── personal-professional-profile.md
 │   ├── work-experience.md
 │   ├── relevant-experiences.md
@@ -37,105 +37,105 @@ professional-career-notebook/
 │   ├── personal-projects.md
 │   └── academic-projects-experiences.md
 │
-├── knowledge-base/               # Conteúdos técnicos e de estudo
-│   ├── algorithms/               # Exercícios e anotações de algoritmos
-│   ├── architecture/             # Arquitetura de software
-│   ├── artificial-intelligence/  # IA e workflows com IA
-│   ├── courses/                  # Anotações de cursos e workshops
-│   ├── english-training/         # Prática de inglês
-│   ├── software-engineering/     # Engenharia de software em geral
-│   ├── system-design-interview/  # Preparação para system design
-│   └── tech-leads-club/          # Conteúdos da comunidade Tech Leads Club
+├── knowledge-base/               # Technical and study content
+│   ├── algorithms/               # Algorithm exercises and notes
+│   ├── architecture/             # Software architecture
+│   ├── artificial-intelligence/  # AI and AI workflows
+│   ├── courses/                  # Course and workshop notes
+│   ├── english-training/         # English practice
+│   ├── software-engineering/     # General software engineering
+│   ├── system-design-interview/  # System design preparation
+│   └── tech-leads-club/          # Tech Leads Club community content
 │
-├── hiring-processes/             # Processos seletivos
-│   ├── in-progress/              # Em andamento
-│   └── completed/                # Finalizados (histórico)
+├── hiring-processes/             # Hiring processes
+│   ├── in-progress/              # Active processes
+│   └── completed/                # Completed (history)
 │
-├── interview-preparation/        # Preparação para entrevistas (templates e roteiros)
-├── guidelines/                   # Dicas de currículo, copywriting, busca de vagas e recrutadores
-├── salary-compensations/         # Referências de compensação
-├── linkedin-posts/               # Rascunhos e posts publicados
-├── resumes/                      # Currículos em PDF e materiais de apresentação
-├── resume-generator/             # Ferramenta para gerar currículo em PDF a partir de YAML
+├── interview-preparation/        # Interview preparation (templates and guides)
+├── guidelines/                   # Resume tips, copywriting, job search, and recruiter communication
+├── salary-compensations/         # Compensation references
+├── linkedin-posts/               # Drafts and published posts
+├── resumes/                      # PDF resumes and presentation materials
+├── resume-generator/             # Tool to generate PDF resumes from YAML
 │
 ├── .cursor/
-│   ├── rules/                    # Regras always-apply para o comportamento da IA
-│   └── skills/                   # Skills condicionais (automações específicas)
+│   ├── rules/                    # Always-apply rules for AI behavior
+│   └── skills/                   # Conditional skills (specific automations)
 │
 └── README.md
 ```
 
-### Pastas-chave
+### Key folders
 
-| Pasta | Propósito |
+| Folder | Purpose |
 |---|---|
-| `source-of-truth/` | **Dados canônicos** sobre perfil, experiências e storytellings. É a fonte que a IA prioriza para gerar qualquer output. |
-| `source-of-truth/career-tracking/` | **Acompanhamento de carreira por empresa** — conquistas trimestrais, ciclos de avaliação de performance e registros semanais de progresso (3Ps). Um diretório por empresa. |
-| `knowledge-base/` | **Base de conhecimento técnico.** Tudo que estudo (cursos, system design, algoritmos) fica registrado aqui e é reutilizado automaticamente nas preparações de entrevista e currículo. |
-| `hiring-processes/` | **Registro completo de cada processo seletivo** — job description, análise de fit, currículo gerado, preparação para entrevistas e resultado. |
-| `.cursor/rules/` | **Regras globais** que definem tom, formato e comportamento da IA em toda interação. |
-| `.cursor/skills/` | **Automações condicionais** — workflows que a IA executa para tarefas específicas (registrar processo seletivo, gerar currículo, etc.). |
+| `source-of-truth/` | **Canonical data** about profile, experiences, and storytellings. This is the source the AI prioritizes to generate any output. |
+| `source-of-truth/career-tracking/` | **Career tracking by company** — quarterly achievements, performance review cycles, and weekly progress reports (3Ps). One directory per company. |
+| `knowledge-base/` | **Technical knowledge base.** Everything studied (courses, system design, algorithms) is recorded here and automatically reused in interview preparation and resume generation. |
+| `hiring-processes/` | **Complete record of each hiring process** — job description, fit analysis, generated resume, interview preparation, and outcome. |
+| `.cursor/rules/` | **Global rules** that define the AI's tone, format, and behavior in every interaction. |
+| `.cursor/skills/` | **Conditional automations** — workflows the AI executes for specific tasks (register hiring process, generate resume, etc.). |
 
 ---
 
-## Como funciona
+## How it works
 
-O fluxo geral segue este ciclo:
+The general flow follows this cycle:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   Registro de experiências         Registro de estudos      │
-│   (source-of-truth/)               (knowledge-base/)        │
+│   Experience logging              Study logging             │
+│   (source-of-truth/)              (knowledge-base/)         │
 │         │                                │                  │
 │         └──────────┐    ┌────────────────┘                  │
 │                    ▼    ▼                                   │
 │              ┌──────────────┐                               │
-│              │  Cursor + IA │                               │
+│              │ AI Agent     │                               │
 │              └──────┬───────┘                               │
 │                     │                                       │
 │         ┌───────────┼───────────┐                           │
 │         ▼           ▼           ▼                           │
-│    Currículo   Preparação   Avaliação                       │
-│   customizado  entrevista   performance                     │
+│    Customized   Interview   Performance                     │
+│    resume       preparation evaluation                      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-1. **Alimento o repositório** com experiências profissionais, storytellings, projetos e conteúdos de estudo
-2. **A IA utiliza o contexto** das rules e skills para entender como processar cada tipo de tarefa
-3. **Gero outputs** — currículos, preparações de entrevista, respostas de avaliação — todos baseados em dados reais e verificáveis
+1. **Feed the repository** with professional experiences, storytellings, projects, and study content
+2. **The AI uses the context** from rules and skills to understand how to process each type of task
+3. **Generate outputs** — resumes, interview preparations, evaluation responses — all based on real and verifiable data
 
 ---
 
-## Como usar como template
+## How to use as a template
 
-Se você quer criar seu próprio Brag Document com IA, a estrutura mínima para começar é:
+If you want to create your own AI-powered Brag Document, the minimum structure to get started is:
 
 ```
-meu-brag-document/
+my-brag-document/
 ├── source-of-truth/
-│   ├── profile.md                # Seu perfil profissional (resumo, skills, idiomas)
-│   ├── work-experience.md        # Experiências de trabalho com métricas e impacto
-│   └── storytellings.md          # Histórias formatadas em STAR (Situation, Task, Action, Result)
-├── knowledge-base/               # Opcional: anotações de estudo e conteúdos técnicos
-├── hiring-processes/             # Opcional: registro de processos seletivos
-└── AGENTS.md                    # Instruções de comportamento para agentes de IA
+│   ├── profile.md                # Your professional profile (summary, skills, languages)
+│   ├── work-experience.md        # Work experiences with metrics and impact
+│   └── storytellings.md          # Stories formatted in STAR (Situation, Task, Action, Result)
+├── knowledge-base/               # Optional: study notes and technical content
+├── hiring-processes/             # Optional: hiring process records
+└── AGENTS.md                    # Behavioral instructions for AI agents
 ```
 
-**Dicas para começar:**
+**Tips to get started:**
 
-- Comece pelo `source-of-truth/` — liste suas experiências com **métricas e impacto concreto**
-- Use o método **STAR** (Situation, Task, Action, Result) para storytellings
-- Atualize quinzenalmente — cada update leva menos de 1 minuto
-- Registre o trabalho "invisível": mentoria, code review, refactoring, melhorias de processo
-- Compartilhe com seu gestor — facilita avaliações e conversas de carreira
+- Start with `source-of-truth/` — list your experiences with **concrete metrics and impact**
+- Use the **STAR method** (Situation, Task, Action, Result) for storytellings
+- Update biweekly — each update takes less than 1 minute
+- Record "invisible work": mentoring, code review, refactoring, process improvements
+- Share with your manager — it makes evaluations and career conversations easier
 
 ---
 
-## Referências
+## References
 
 - [Get your work recognized: write a brag document — Julia Evans (2019)](https://jvns.ca/blog/brag-documents/)
-- [Dica de carreira: crie um brag document — Elton Minetto (2022)](https://eltonminetto.dev/post/2022-04-14-brag-document/)
+- [Career tip: create a brag document — Elton Minetto (2022)](https://eltonminetto.dev/post/2022-04-14-brag-document/)
 - [Boost your career with a brag sheet — Erica Pisani (2023)](https://ericapisani.dev/boost-your-career-with-a-brag-sheet/)
 - [Get promoted faster with an AI-written brag doc — The AI-Augmented Engineer (2025)](https://www.augmentedswe.com/p/how-to-write-a-brag-doc-using-ai)

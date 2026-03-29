@@ -104,4 +104,4 @@ Don't memorize designs. Match the problem to the patterns above.
 
 ## References
 
-*   [Os 7 Padrões de System Design que Aparecem em Toda Entrevista](https://newsletter.nagringa.dev/p/padroes-system-design-entrevistas) - Source article by Lucas Faria (Na Gringa).
+*   [The 7 System Design Patterns That Appear in Every Interview](https://newsletter.nagringa.dev/p/padroes-system-design-entrevistas) - Source article by Lucas Faria (Na Gringa).

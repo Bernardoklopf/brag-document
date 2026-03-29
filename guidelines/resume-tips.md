@@ -13,27 +13,25 @@ A resume is NOT a CV. Where your CV should be all about you, your resume should 
 
 ## Highlighting the most important points
 
-Reza a lenda que recrutadores levam somente 30 segundos lendo cada Resume.
+Legend has it that recruiters spend only 30 seconds reading each resume.
 
-Por isso é importante que você consiga destacar os pontos mais importantes logo no início do documento.
+That's why it's important to highlight the most important points right at the beginning of the document.
 
-Para cumprir esse objetivo, sempre uso o "Summary" no meus resumes.
+To achieve this, always use a "Summary" section in your resumes.
 
-Gosto de trazer 3 bullet points focados em convencer o leitor a continuar a leitura.
+Use 3 bullet points focused on convincing the reader to keep reading.
 
-Para o primeiro, você pode mencionar sua profissão / cargo que pretende concorrer + anos de experiência + principais tecnologias e abordagens.
+For the first bullet, mention your profession / target role + years of experience + main technologies and approaches.
 
-Ex.: "𝙂𝙧𝙤𝙬𝙩𝙝 𝙈𝙖𝙧𝙠𝙚𝙩𝙞𝙣𝙜 𝙈𝙖𝙣𝙖𝙜𝙚𝙧 𝙬𝙞𝙩𝙝 𝟳+ 𝙮𝙚𝙖𝙧𝙨 𝙤𝙛 𝙚𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙚 𝙙𝙧𝙞𝙫𝙞𝙣𝙜 𝙨𝙪𝙨𝙩𝙖𝙞𝙣𝙖𝙗𝙡𝙚 𝙧𝙚𝙫𝙚𝙣𝙪𝙚 𝙜𝙧𝙤𝙬𝙩𝙝 𝙩𝙝𝙧𝙤𝙪𝙜𝙝 𝙁𝙪𝙣𝙣𝙚𝙡 𝙊𝙥𝙩𝙞𝙢𝙞𝙯𝙖𝙩𝙞𝙤𝙣, 𝘾𝙍𝙊, 𝙋𝙖𝙞𝙙 𝙈𝙚𝙙𝙞𝙖, 𝘾𝙍𝙊, 𝙖𝙣𝙙 𝘾𝙍𝙈."
+E.g.: "𝙂𝙧𝙤𝙬𝙩𝙝 𝙈𝙖𝙧𝙠𝙚𝙩𝙞𝙣𝙜 𝙈𝙖𝙣𝙖𝙜𝙚𝙧 𝙬𝙞𝙩𝙝 𝟳+ 𝙮𝙚𝙖𝙧𝙨 𝙤𝙛 𝙚𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙚 𝙙𝙧𝙞𝙫𝙞𝙣𝙜 𝙨𝙪𝙨𝙩𝙖𝙞𝙣𝙖𝙗𝙡𝙚 𝙧𝙚𝙫𝙚𝙣𝙪𝙚 𝙜𝙧𝙤𝙬𝙩𝙝 𝙩𝙝𝙧𝙤𝙪𝙜𝙝 𝙁𝙪𝙣𝙣𝙚𝙡 𝙊𝙥𝙩𝙞𝙢𝙞𝙯𝙖𝙩𝙞𝙤𝙣, 𝘾𝙍𝙊, 𝙋𝙖𝙞𝙙 𝙈𝙚𝙙𝙞𝙖, 𝘾𝙍𝙊, 𝙖𝙣𝙙 𝘾𝙍𝙈."
 
-Para o segundo e o terceiro, vale trazer um resumo de grandes conquistas:
+For the second and third, bring a summary of major achievements:
 
 "𝙇𝙚𝙙 𝙢𝙪𝙡𝙩𝙞𝙙𝙞𝙨𝙘𝙞𝙥𝙡𝙞𝙣𝙖𝙧𝙮 𝙩𝙚𝙖𝙢𝙨 𝙛𝙧𝙤𝙢 𝟱 𝙩𝙤 𝟯𝟬+ 𝙟𝙪𝙣𝙞𝙤𝙧 𝙩𝙤 𝙨𝙚𝙣𝙞𝙤𝙧 𝙥𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡𝙨 𝙞𝙣 𝙙𝙞𝙛𝙛𝙚𝙧𝙚𝙣𝙩 𝘽𝟮𝘾 𝙘𝙤𝙢𝙥𝙖𝙣𝙞𝙚𝙨 𝙬𝙞𝙩𝙝 𝟮𝙈+ 𝙢𝙚𝙙𝙞𝙖 𝙗𝙪𝙙𝙜𝙚𝙩𝙨"
 
-Obs.: repare que uso sempre o que as vagas na minha área buscam para a minha posição: capacidade de liderança, conhecimento em canais de marketing.
+Note: always use what job postings in your area look for in your position — leadership ability, knowledge of marketing channels, etc.
 
-Tempero isso com big numbers reais que chamam atenção.
-
-Pra fechar, deixo na imagem abaixo um exemplo para a área de tecnologia.
+Season it with real big numbers that grab attention.
 
 ## Lenght
 
