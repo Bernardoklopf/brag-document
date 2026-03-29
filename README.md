@@ -25,6 +25,11 @@ Em vez de manter um documento estático, este repositório organiza toda a sua t
 professional-career-notebook/
 │
 ├── source-of-truth/              # Fonte primária de informação
+│   ├── career-tracking/          # Acompanhamento de carreira por empresa
+│   │   └── {company-name}/       # Um diretório por empresa (kebab-case)
+│   │       ├── achievements/     # Conquistas trimestrais
+│   │       ├── performance-cycles/ # Ciclos de avaliação de performance
+│   │       └── 3ps/              # Progresso/Planos/Problemas semanais
 │   ├── personal-professional-profile.md
 │   ├── work-experience.md
 │   ├── relevant-experiences.md
@@ -46,7 +51,6 @@ professional-career-notebook/
 │   ├── in-progress/              # Em andamento
 │   └── completed/                # Finalizados (histórico)
 │
-├── evaluations/                  # Avaliações de performance
 ├── interview-preparation/        # Preparação para entrevistas (templates e roteiros)
 ├── guidelines/                   # Dicas de currículo, copywriting, busca de vagas e recrutadores
 ├── salary-compensations/         # Referências de compensação
@@ -66,6 +70,7 @@ professional-career-notebook/
 | Pasta | Propósito |
 |---|---|
 | `source-of-truth/` | **Dados canônicos** sobre perfil, experiências e storytellings. É a fonte que a IA prioriza para gerar qualquer output. |
+| `source-of-truth/career-tracking/` | **Acompanhamento de carreira por empresa** — conquistas trimestrais, ciclos de avaliação de performance e registros semanais de progresso (3Ps). Um diretório por empresa. |
 | `knowledge-base/` | **Base de conhecimento técnico.** Tudo que estudo (cursos, system design, algoritmos) fica registrado aqui e é reutilizado automaticamente nas preparações de entrevista e currículo. |
 | `hiring-processes/` | **Registro completo de cada processo seletivo** — job description, análise de fit, currículo gerado, preparação para entrevistas e resultado. |
 | `.cursor/rules/` | **Regras globais** que definem tom, formato e comportamento da IA em toda interação. |

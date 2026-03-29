@@ -25,6 +25,24 @@ The **primary source of information**. Always prioritize files here over any oth
 
 Files in this folder self-declare their reliability. Some state "This can be considered the source of truth", others note content may be outdated. Respect these declarations.
 
+#### `career-tracking/` — Ongoing career data by company
+
+Tracks achievements, performance cycles, and weekly 3Ps (Progress/Plans/Problems) per company:
+
+```
+career-tracking/
+└── {company-name}/              ← kebab-case, one directory per company
+    ├── achievements/
+    │   └── {year}-q{n}.md       ← quarterly achievement log
+    ├── performance-cycles/
+    │   └── {year}-h{n}.md       ← per-cycle: self-assessment, feedback, ratings
+    └── 3ps/
+        └── {year}.md            ← weekly Progress/Plans/Problems entries
+```
+
+- Template skeleton: `career-tracking/_template-company/`
+- **Naming:** company directories in `kebab-case`; files follow `{year}-q{n}.md`, `{year}-h{n}.md`, `{year}.md` patterns
+
 ### `knowledge-base/` — Technical knowledge base
 
 Reference material for technical content generation. Use when:
@@ -39,10 +57,6 @@ Subfolders: `algorithms/`, `architecture/`, `artificial-intelligence/`, `courses
 - `in-progress/` — Active processes. Each subfolder contains: job description, fit analysis, customized resume, interview preparation, and status
 - `in-progress/_template-company-role/` — Skeleton template for creating new hiring processes. Use this as the reference structure.
 - `completed/` — Archived processes with outcomes. Processes are moved here when finalized.
-
-### `evaluations/` — Performance reviews
-
-Self-evaluations and performance review responses with evidence-based answers.
 
 ### `interview-preparation/` — Interview preparation
 
@@ -132,6 +146,7 @@ Skills are available in both `.cursor/skills/` (for Cursor) and `.claude/skills/
 2. **Prioritize `source-of-truth/`.** When conflicting information exists, `source-of-truth/` files win.
 3. **Cross-reference `knowledge-base/`** when generating technical content (interview prep, skill assessments).
 4. **Use `hiring-processes/in-progress/_template-company-role/`** as the reference pattern when creating new hiring process entries.
-5. **Do not expose sensitive data** (salaries, personal identifiers) unless explicitly requested.
-6. **Do not use H1 (#) headers** in responses; start with H2 (##) or H3 (###).
-7. **Do not summarize** code or text blocks unless explicitly asked.
+5. **Use `source-of-truth/career-tracking/_template-company/`** as the reference pattern when creating new career tracking entries per company.
+6. **Do not expose sensitive data** (salaries, personal identifiers) unless explicitly requested.
+7. **Do not use H1 (#) headers** in responses; start with H2 (##) or H3 (###).
+8. **Do not summarize** code or text blocks unless explicitly asked.
